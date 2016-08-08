@@ -1,7 +1,7 @@
 ## 小农女JavaScript代码规范
 规范旨在提高代码可读性，促进团队开发效率，减少维护成本以及自身编码能力的提升。
 
-墙裂推荐使用webStrome+[eslint-plugin-react](https://github.com/gmfe/eslint-plugin-gm)开发，使用webStrome格式化代码，eslint检测代码，基本可以规范代码的编写了。
+强烈推荐使用webStrome+[eslint-plugin-react](https://github.com/gmfe/eslint-plugin-gm)开发，使用webStrome格式化代码，eslint检测代码，基本可以规范代码的编写了。
 
 ### js
 1. 变量声明。let与const。
