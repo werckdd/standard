@@ -4,6 +4,12 @@
 
 墙裂推荐使用WebStrome+[eslint-plugin-react](https://github.com/gmfe/eslint-plugin-gm)开发，使用webStrome格式化代码，eslint检测代码，基本可以规范代码的编写了。
 
+### 说明：
+
+![suggest][Suggest Icon] 表示**建议**，不要求。
+
+## 目录
+
 - [文件命名](#文件命名)
 - [JS](#JS)
 - [React](#React)
@@ -199,3 +205,6 @@ Link.contextTypes = {};
 
 - 过eslint检测
 - 格式化代码，WebStorm可设置commit的时候自动格式化代码
+
+
+[Suggest Icon]: https://jaywcjlove.github.io/sb/ico/min-tuijian.svg
