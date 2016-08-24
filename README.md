@@ -27,19 +27,19 @@
 ## 文件命名
 
 - 文件夹以模块功能命名，全小写，使用`_`连接单词。
-- 文件名同上
+- 文件名同上。
 
 ## JS
 
 - 常量全大写，用`_`连接单词。
 - 变量声明，`let`与`const`。
-    * 尽量使用`const`
-    * 只有在变量值会改变的情况下使用`let`声明
+    * 尽量使用`const`。
+    * 只有在变量值会改变的情况下使用`let`声明。
 
-- 变量名。
-   * 类名使用帕斯卡命名法。如：`class SendMessage{ }`
-   * 方法名、变量名、属性名推荐使用驼峰命名法，即首字母小写，后面的单词首字母大写。如：`const msg='hello world';`
-   * 名称最好能正确描述变量所代表的内容，或者方法所执行的动作，不在意名字的长短，发布会压缩的。如：`const fetchSpus = () => {};`
+- 变量名
+   * 类名使用帕斯卡命名法。如：`class SendMessage{ }`。
+   * 方法名、变量名、属性名推荐使用驼峰命名法，即首字母小写，后面的单词首字母大写。如：`const msg='hello world';`。
+   * 名称最好能正确描述变量所代表的内容，或者方法所执行的动作，不在意名字的长短，发布会压缩的。如：`const fetchSpus = () => {};`。
 
 ## React
 
@@ -53,19 +53,22 @@
 
 ### jsx闭合 
 
-无子节点的空标签应自闭合，且留一个空格
+无子节点的空标签应自闭合。闭合标签前可留空格，可不留。
 
 ```jsx
 // bad
 <Foo></Foo>
 
 // good
+<Foo/>
+
+// good
 <Foo />
 ```
 
-### ref
+### ref ![suggest][Suggest Icon] 
 
-总是使用ref回调
+总是使用ref回调。
 
 ```jsx
 // bad
@@ -80,7 +83,7 @@
 
 ### Class vs `React.createClass`
 
-用Class来定义组件
+用Class来定义组件。
 
 ```jsx
 // bad
@@ -123,7 +126,7 @@ class Item extends React.Component {
 
 ### jsx属性
 
-- 属性用双引号`"`，方便这种写法`"don't"`，js部分用单引号`'`
+- 属性用双引号`"`，方便这种写法`"don't"`，js部分用单引号`'`。
 
 ```jsx
 // bad
@@ -139,7 +142,31 @@ class Item extends React.Component {
 <Foo style={{ left: '20px' }} />
 ```
 
-- 闭合标签换行
+- 属性如果多(怎样才算多没标准)则换行，如果换行则全部属性换行。
+
+```jsx
+// bad
+<Foo name="afadf" nickName="adfadf" age="10" city="SZ" country="china"/>
+
+// bad
+<Foo name="afadf" 
+     nickName="adfadf" 
+     age="10" 
+     city="SZ" 
+     country="china"
+/>
+
+// good
+<Foo 
+    name="afadf" 
+    nickName="adfadf" 
+    age="10" 
+    city="SZ" 
+    country="china"
+/>
+```
+
+### 闭合标签换行
 
 ```jsx
 // bad
@@ -154,7 +181,7 @@ class Item extends React.Component {
 />
 ```
 
-### 组件内方法顺序
+### 组件内方法顺序 ![suggest][Suggest Icon]
 
 ```jsx
 * optional static methods
@@ -175,7 +202,7 @@ class Item extends React.Component {
 
 ### 组件静态方法
 
-怎么定义propTypes, defaultProps, contextTypes？
+怎么定义propTypes, defaultProps, contextTypes。其位置顺序不要求。
 
 ```jsx
 class Link extends React.Component {
@@ -203,8 +230,8 @@ Link.contextTypes = {};
 
 ## 提交代码
 
-- 过eslint检测
-- 格式化代码，WebStorm可设置commit的时候自动格式化代码
+- 过eslint检测。
+- 格式化代码，WebStorm可设置commit的时候自动格式化代码。
 
 
-[Suggest Icon]: https://jaywcjlove.github.io/sb/ico/min-tuijian.svg
+[Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
