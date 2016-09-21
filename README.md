@@ -11,8 +11,8 @@
 ## 目录
 
 - [文件命名](#文件命名)
-- [JS](#JS)
-- [React](#React)
+- [JS](#js)
+- [React](#react)
     * [命名原则](#命名原则)
     * [jsx闭合](#jsx闭合)
     * [ref](#ref)
@@ -41,6 +41,9 @@
    * 方法名、变量名、属性名推荐使用驼峰命名法，即首字母小写，后面的单词首字母大写。如：`const msg='hello world';`。
    * 名称最好能正确描述变量所代表的内容，或者方法所执行的动作，不在意名字的长短，发布会压缩的。如：`const fetchSpus = () => {};`。
 
+- 导出
+   * 模块导出要写在文件最后。 且只有一个export语句。
+
 ## React
 
 ### 命名原则
@@ -66,8 +69,9 @@
 <Foo />
 ```
 
-### ref ![suggest][Suggest Icon] 
+### ref  
 
+![suggest][Suggest Icon]
 总是使用ref回调。
 
 ```jsx
@@ -181,7 +185,9 @@ class Item extends React.Component {
 />
 ```
 
-### 组件内方法顺序 ![suggest][Suggest Icon]
+### 组件内方法顺序 
+
+![suggest][Suggest Icon]
 
 ```jsx
 * optional static methods
