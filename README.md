@@ -23,6 +23,7 @@
     * [组件静态方法](#组件静态方法)
 - [注释](#注释)
 - [提交代码](#提交代码)
+- [美观](#美观)
 
 ## 文件命名
 
@@ -239,5 +240,28 @@ Link.contextTypes = {};
 - 过eslint检测。
 - 格式化代码，WebStorm可设置commit的时候自动格式化代码。
 
+## 美观
+
+![suggest][Suggest Icon]
+
+不同代码功能或者块最好有隔行，提高可读性。
+
+```jsx
+// bad
+import React from 'react';
+class Demo from React.Component{
+    xxxx
+}
+export default Demo;
+
+// good
+import React from 'react';
+
+class Demo from React.Component{
+    xxxx
+}
+
+export default Demo;
+```
 
 [Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
