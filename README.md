@@ -24,6 +24,9 @@
 - [注释](#注释)
 - [提交代码](#提交代码)
 - [美观](#美观)
+- [数据处理](#数据处理)
+    * [日期处理](#日期处理)
+    * [价格处理](#价格处理)
 
 ## 文件命名
 
@@ -186,9 +189,7 @@ class Item extends React.Component {
 />
 ```
 
-### 组件内方法顺序 
-
-![suggest][Suggest Icon]
+### 组件内方法顺序 ![suggest][Suggest Icon]
 
 ```jsx
 * optional static methods
@@ -240,9 +241,7 @@ Link.contextTypes = {};
 - 过eslint检测。
 - 格式化代码，WebStorm可设置commit的时候自动格式化代码。
 
-## 美观
-
-![suggest][Suggest Icon]
+## 美观 ![suggest][Suggest Icon]
 
 不同代码功能或者块最好有隔行，提高可读性。
 
@@ -262,6 +261,26 @@ class Demo from React.Component{
 }
 
 export default Demo;
+```
+
+## 数据处理
+
+### 日期处理
+使用[moment.js](http://momentjs.com/docs/)进行日期处理
+
+```javascript
+moment("12-25-1995", "MM-DD-YYYY");
+moment("2010-10-20 4:30", "YYYY-MM-DD HH:mm");
+moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+```
+### 价格处理
+使用[big.js](https://mikemcl.github.io/big.js/)进行价格处理
+
+```javascript
+0.1 + 0.2                  // 0.30000000000000004
+x = new Big(0.1)
+y = x.plus(0.2)            // '0.3'
+Big(0.7).plus(x).plus(y)   // '1.1'
 ```
 
 [Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
