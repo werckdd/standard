@@ -58,7 +58,7 @@
 - 以上如果太长则使用缩写，如服务时间管理`Service_Mission_Manage`缩写是`SMM`。
 - react-route的path用小写，`_`连接单词`<Route path="service_mission_manage">`。
 
-### jsx闭合 
+### jsx闭合
 
 无子节点的空标签应自闭合。闭合标签前可留空格，可不留。
 
@@ -157,19 +157,19 @@ class Item extends React.Component {
 <Foo name="afadf" nickName="adfadf" age="10" city="SZ" country="china"/>
 
 // bad
-<Foo name="afadf" 
-     nickName="adfadf" 
-     age="10" 
-     city="SZ" 
+<Foo name="afadf"
+     nickName="adfadf"
+     age="10"
+     city="SZ"
      country="china"
 />
 
 // good
-<Foo 
-    name="afadf" 
-    nickName="adfadf" 
-    age="10" 
-    city="SZ" 
+<Foo
+    name="afadf"
+    nickName="adfadf"
+    age="10"
+    city="SZ"
     country="china"
 />
 ```
@@ -189,7 +189,9 @@ class Item extends React.Component {
 />
 ```
 
-### 组件内方法顺序 ![suggest][Suggest Icon]
+### 组件内方法顺序
+
+![suggest][Suggest Icon]
 
 ```jsx
 * optional static methods
@@ -241,7 +243,9 @@ Link.contextTypes = {};
 - 过eslint检测。
 - 格式化代码，WebStorm可设置commit的时候自动格式化代码。
 
-## 美观 ![suggest][Suggest Icon]
+## 美观
+
+![suggest][Suggest Icon]
 
 不同代码功能或者块最好有隔行，提高可读性。
 
