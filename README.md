@@ -287,8 +287,22 @@ y = x.plus(0.2)            // '0.3'
 Big(0.7).plus(x).plus(y)   // '1.1'
 ```
 
-### Git 工作流
-规范[Git Flow](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+---
+#观麦Git工作流规范
+Git 作为一个源码管理系统，不可避免涉及到多人协作。
+协作必须有一个规范的工作流程，让大家有效地合作，使得项目井井有条地发展下去。
+### 说明：
+
+![suggest][Suggest Icon] 表示**建议**，不要求。
+
+
+## 目录
+
+- [分支命名](#分支命名)
+
+
+##分支命名
+
 ```
 分支命名规范：
 `master`: 
@@ -301,7 +315,13 @@ Big(0.7).plus(x).plus(y)   // '1.1'
 功能需求类分支, 注意要定期同步一下`master`, 可上线的时候需要`checkout`出一个`release-xxxx`分支，用于`rebase`为一个节点合并至master，分支feature-xxxx不能被删除，用于记录开发历史
 
 `release-xxxx`： 
-用于提pr的分支，merge至master后便可删除
+用于提pr的分支，merge至master后便可删除。
 ```
+
+更多扩展：
+- [Git工作流程介绍](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+- [Git相关学习资料](https://github.com/xirong/my-git)
+
+
 
 [Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
