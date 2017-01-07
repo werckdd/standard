@@ -287,4 +287,21 @@ y = x.plus(0.2)            // '0.3'
 Big(0.7).plus(x).plus(y)   // '1.1'
 ```
 
+### Git 工作流
+规范[Git Flow](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+```
+分支命名规范：
+`master`: 
+主分支， 用于跟踪线上分支
+
+`hotfix-xxxx`: 
+用于修复bug的分支, 修复好合并至`master`后便可以删除
+
+`feature-xxxx`: 
+功能需求类分支, 注意要定期同步一下`master`, 可上线的时候需要`checkout`出一个`release-xxxx`分支，用于`rebase`为一个节点合并至master，分支feature-xxxx不能被删除，用于记录开发历史
+
+`release-xxxx`： 
+用于提pr的分支，merge至master后便可删除
+```
+
 [Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
