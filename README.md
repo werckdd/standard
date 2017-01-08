@@ -312,17 +312,17 @@ Git 作为一个源码管理系统，不可避免涉及到多人协作。
 ##分支命名
 
 ```
-分支命名规范：
+分支命名规范(xxxx的命名用下划线连接)：
 `master`: 
 主分支， 用于跟踪线上分支
 
-`hotfix-xxxx`: 
+`hotfix-xxx_xxx`: 
 用于修复bug的分支, 修复好合并至`master`后便可以删除
 
-`feature-xxxx`: 
+`feature-xxx_xx_xx`: 
 功能需求类分支, 注意要定期同步一下`master`, 分支feature-xxxx应长期保留，用于记录开发历史
 
-`release-xxxx`： 
+`release-xxx_xx`： 
 用于提pr的分支，merge至master后便可删除。
 ```
 
