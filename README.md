@@ -250,6 +250,8 @@ Link.contextTypes = {};
 
 - 过eslint检测。
 - 格式化代码，WebStorm可设置commit的时候自动格式化代码。
+- gitlab PR原则。1 三个pass。2 半个钟后存在pass则过。3 如A提出修改意见，修改之后，需A的pass才能merge。4 特殊情况特殊处理(非工作时间找不到人review，紧急情况)，周知钉钉群后merge。
+- github PR原则。按照github的规则来，"pass"也需要三个。
 
 ## 美观
 
