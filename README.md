@@ -231,6 +231,10 @@ Link.defaultProps = {};
 Link.contextTypes = {};
 ```
 
+### option的值
+
+select包含`全部`的option，其value用`""`
+
 ## 注释
 
 - 单行注释独占一行， `//`后跟一个空格。
