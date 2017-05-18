@@ -1,12 +1,12 @@
-#观麦前端规范
+观麦前端规范
+===
 
-##目录
+## 目录
+
 - [观麦编程规范](#观麦编程规范)
 - [观麦git工作流规范](#观麦git工作流规范)
 
-
-
-#观麦编程规范
+# 观麦编程规范
 
 规范旨在提高代码可读性，促进团队开发效率，减少维护成本以及自身编码能力的提升。
 
@@ -288,6 +288,7 @@ moment("2010-10-20 4:30", "YYYY-MM-DD HH:mm");
 moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 ```
 ### 价格处理
+
 使用[big.js](https://mikemcl.github.io/big.js/)进行价格处理
 
 ```javascript
@@ -296,42 +297,3 @@ x = new Big(0.1)
 y = x.plus(0.2)            // '0.3'
 Big(0.7).plus(x).plus(y)   // '1.1'
 ```
-
----
-#观麦git工作流规范
-Git 作为一个源码管理系统，不可避免涉及到多人协作。
-协作必须有一个规范的工作流程，让大家有效地合作，使得项目井井有条地发展下去。
-### 说明：
-
-![suggest][Suggest Icon] 表示**建议**，不要求。
-
-
-## 目录
-
-- [分支命名](#分支命名)
-
-
-##分支命名
-
-```
-分支命名规范(xxxx的命名用下划线连接)：
-`master`: 
-主分支， 用于跟踪线上分支
-
-`hotfix-xxx_xxx`: 
-用于修复bug的分支, 修复好合并至`master`后便可以删除
-
-`feature-xxx_xx_xx`: 
-功能需求类分支, 注意要定期同步一下`master`, 分支feature-xxxx应长期保留，用于记录开发历史
-
-`release-xxx_xx`： 
-用于提pr的分支，merge至master后便可删除。
-```
-
-更多扩展：
-- [Git工作流程介绍](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
-- [Git相关学习资料](https://github.com/xirong/my-git)
-
-
-
-[Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
