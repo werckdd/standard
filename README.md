@@ -21,7 +21,7 @@
     * [命名原则](#命名原则)
     * [jsx闭合](#jsx闭合)
     * [ref](#ref)
-    * [Class vs `React.createClass`](#Class vs `React.createClass`)
+    * [Class vs React.createClass](#Class vs React.createClass)
     * [方法定义](#方法定义)
     * [jsx属性](#jsx属性)
     * [组件内方法顺序](#组件内方法顺序)
@@ -294,3 +294,5 @@ x = new Big(0.1)
 y = x.plus(0.2)            // '0.3'
 Big(0.7).plus(x).plus(y)   // '1.1'
 ```
+
+[Suggest Icon]: https://rawgit.com/gmfe/standard/master/svg/min-tuijian.svg
