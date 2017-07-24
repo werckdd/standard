@@ -27,6 +27,9 @@ Git 作为一个源码管理系统，不可避免涉及到多人协作。
 
 `release-xxx_xx`：
 用于提pr的分支，merge至master后便可删除。
+
+`online-xxx_xx`：
+类似`master`分支可独立跑在生产环境，但未来不打算merge到`master`的分支。
 ```
 
 更多扩展：
